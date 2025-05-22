@@ -43,7 +43,6 @@ func main() {
 		if err != nil {
 			panic(err)
 		}
-		os.Remove(journalFile)
 		err = os.WriteFile(journalFile, oldJournal, 0755)
 		if err != nil {
 			panic(err)
